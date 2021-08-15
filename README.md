@@ -82,7 +82,7 @@ You can run the program by
          ...
 		 EOF
 		 
-We can see that in the mTSP file each node has M different (x,y) coordinate, which will generate M differet costs for each edge.
+We can see that in the mTSP file each node has M different (x,y) coordinate, which will generate M different costs for each edge.
  
 -  <weight_vector_filename>: This argument is the file describes the weight vectors of different PPLS/D processes. The format is 
 

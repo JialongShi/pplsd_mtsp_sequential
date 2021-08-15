@@ -31,7 +31,7 @@ where f_k(x) is the k-th objective function. In this program, the neighborhood m
 
 - Source code: main.cpp  problem.h  problem.cpp  solution.h  solution.cpp  archive.h  archive.cpp  misc.h  misc.cpp  pplsd.h  pplsd.cpp
 
-- Problem file examples: example_mtsp_m2_n50.dat example_mtsp_m3_n30.dat
+- Problem file examples: example_mtsp_m2_n50.tsp example_mtsp_m3_n30.tsp
 
 - Weight vector file examples: example_wv_m2_6procs.txt example_wv_m3_15procs.txt
 
@@ -97,7 +97,7 @@ Note here that the process ID must start from 0, the weight vector dimension M s
 ** Example **
 
 ```
-./pplsdsv  example_mtsp_m2_n50.dat  example_wv_m2_6procs.txt  6  120
+./pplsdsv  example_mtsp_m2_n50.tsp  example_wv_m2_6procs.txt  6  120
 ```
 
 The above command runs a 6-process PPLS/D on a 2-objective mtsp. The runtime budget is 120s.

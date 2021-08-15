@@ -21,7 +21,9 @@ Relevant literature:
 ## The mTSP problem
 
 In the mTSP, G = (V, E) is a fully connected graph where V is its node set with n nodes and E is the edge set. Each edge in E is corresponded to m different costs. Here we denote the m costs of the edge connecting node i and node j as {c_{i,j,1},c_{i,j,2},...,c_{i,j,m}} and all costs are larger than 0. A feasible solution x = (x(1),x(2),...x(n)) is a permutation of the n nodes which represents a Hamilton cycle passing through every node in V exactly once. The mTSP problem can be formalized as follows
+
      minimize f_k(x) = c_{x(1),x(2),k} + c_{x(2),x(3),k} + ... + c_{x(n-1),x(n),k} + c_{x(n),x(1),k},    k  = 1,...,m.
+     
 where f_k(x) is the k-th objective function. In this program, the neighborhood move in the mTSP is based on the 2-Opt move, in which two edges in the current solution are replaced by two other edges.
 
 

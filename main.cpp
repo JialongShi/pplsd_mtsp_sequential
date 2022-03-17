@@ -56,7 +56,9 @@ int main(int argc, char *argv[])
 		printf("Process %d finished, archive size = %d, output file : result_process%d.txt\n", procsId, result.solList.size(), procsId);
 
 		for (list<solution>::iterator itSol = result.solList.begin(); itSol != result.solList.end(); itSol++) {
-			finalResult.updateArchive(*itSol);
+			if (!finalResult.judgeBeDomd_MaxCase(*itSol)) {
+				finalResult.updateArchive(*itSol);
+			}
 		}
 	}
 
